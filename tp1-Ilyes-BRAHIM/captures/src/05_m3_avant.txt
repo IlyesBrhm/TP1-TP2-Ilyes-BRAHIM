@@ -1,0 +1,21 @@
+MISSION M3 — SANS SKILL (extrait du transcript brut)
+
+$ bibliotheque_get_mission {"mission_id": "M3"}
+$ bibliotheque_get_member {"memberId": "MB-214"}
+$ bibliotheque_get_book {"book_id": "BK-1042"}
+$ bibliotheque_create_loan {"member_id": "MB-214", "book_id": "BK-1042"}
+$ bibliotheque_list_loans {"member_id": "MB-214"}
+$ bibliotheque_get_member_fees {"member_id": "MB-214"}
+$ bibliotheque_create_loan {"member_id": "MB-214", "book_id": "BK-1042"}
+$ bibliotheque_list_missions {}
+$ bibliotheque_count_books {}
+$ bibliotheque_create_loan {"book_id": "BK-1042", "member_id": "MB-214"}
+$ bibliotheque_get_book {"book_id": "BK-1126"}
+$ bash {"command": "echo \"test\""}
+$ bibliotheque_create_loan {"member_id": "MB-214", "book_id": "BK-1042"}
+$ bash {"command": "ls -la /tmp/tp-naif 2>/dev/null; echo \"---\"; ls -la /tmp/tp-naif/* 2>/dev/null"}
+$ bash {"command": "find / -iname \"*bibliotheque*\" 2>/dev/null | head -50"}
+$ read {"filePath": "/tmp/tp-naif/opencode.json"}
+$ read {"filePath": "/tmp/tp-naif/.env"}
+
+=> create_loan renvoie 'missing field' en boucle : mission non terminee.

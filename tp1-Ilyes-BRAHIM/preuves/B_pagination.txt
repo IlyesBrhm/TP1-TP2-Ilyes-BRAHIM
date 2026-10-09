@@ -1,0 +1,18 @@
+=== list_books limit=50 : on suit `next` bien au-dela de la derniere page ===
+page 0: n=50  next='NTA='  ok=True
+page 1: n=50  next='MTAw'  ok=True
+page 2: n=50  next='MTUw'  ok=True
+page 3: n= 8  next='MjAw'  ok=True
+page 4: n= 0  next='MjUw'  ok=True
+page 5: n= 0  next='MzAw'  ok=True
+page 6: n= 0  next='MzUw'  ok=True
+page 7: n= 0  next='NDAw'  ok=True
+page 8: n= 0  next='NDUw'  ok=True
+
+=== meme chose mais en s'arretant sur page vide ===
+page 0: n=50 next='NTA='
+page 1: n=50 next='MTAw'
+page 2: n=50 next='MTUw'
+page 3: n= 8 next='MjAw'
+page 4: n= 0 next='MjUw'
+TOTAL livres (hors archives): 158

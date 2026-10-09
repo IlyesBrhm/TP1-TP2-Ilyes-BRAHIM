@@ -1,0 +1,35 @@
+=== RAFALE 30 appels alternes (count_books / list_members / list_loans) ===
+ 1 count_books   {"ok": true, "count": 184}
+ 2 list_members  ok=True items=1 next=MQ==
+ 3 list_loans    ok=True items=1 next=MQ==
+ 4 count_books   {"ok": true, "count": 184}
+ 5 list_members  ok=True items=1 next=MQ==
+ 6 list_loans    ok=True items=1 next=MQ==
+ 7 count_books   {"ok": true, "count": 184}
+ 8 list_members  ok=True items=1 next=MQ==
+ 9 list_loans    ok=True items=1 next=MQ==
+10 count_books   {"ok": true, "count": 184}
+11 list_members  ok=True items=1 next=MQ==
+12 list_loans    ok=True items=1 next=MQ==
+13 count_books   {"ok": true, "count": 184}
+14 list_members  ok=True items=1 next=MQ==
+15 list_loans    ok=True items=1 next=MQ==
+--- pause 5s ---
+16 count_books   {"ok": true, "count": 184}
+17 list_members  ok=True items=1 next=MQ==
+18 list_loans    ok=True items=1 next=MQ==
+19 count_books   {"ok": true, "count": 184}
+20 list_members  ok=True items=1 next=MQ==
+21 list_loans    ok=True items=1 next=MQ==
+22 count_books   {"ok": true, "count": 184}
+23 list_members  ok=True items=1 next=MQ==
+24 list_loans    ok=True items=1 next=MQ==
+25 count_books   {"ok": true, "count": 184}
+26 list_members  ok=True items=1 next=MQ==
+27 list_loans    ok=True items=1 next=MQ==
+28 count_books   {"ok": true, "count": 184}
+29 list_members  ok=True items=1 next=MQ==
+30 list_loans    ok=True items=1 next=MQ==
+=== pause 10s puis verification ===
+count_books: {"ok": true, "count": 184}
+list_members: {"ok": true, "items": [{"member_id": "MB-200", "first_name": "Yanis", "last_name": "Robin", "joined_at": "05/12/2024", "active": true, "email": "yanis.robin@example.org"}, {"member_id": "MB-201", "fir

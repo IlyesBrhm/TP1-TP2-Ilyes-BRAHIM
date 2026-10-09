@@ -1,0 +1,93 @@
+--- delete_loan sur emprunt OUVERT LN-5139 ---
+{
+  "ok": true,
+  "deleted": true,
+  "loan_id": "LN-5139"
+}
+
+--- delete_loan sur emprunt OUVERT LN-5140 ---
+{
+  "ok": true,
+  "deleted": true,
+  "loan_id": "LN-5140"
+}
+
+--- get_member avec member_id (snake_case) ---
+{
+  "ok": false,
+  "error": "invalid request"
+}
+
+--- get_member avec memberId (camelCase) ---
+{
+  "ok": true,
+  "member": {
+    "member_id": "MB-214",
+    "first_name": "Chloé",
+    "last_name": "Roux",
+    "joined_at": "09/07/2023",
+    "active": true,
+    "email": "chloe.roux@example.org"
+  }
+}
+
+--- search_books 'Racines des vivants' (livre archive) ---
+{
+  "ok": true,
+  "items": [
+    {
+      "book_id": "BK-1002",
+      "title": "Les Racines des vivants",
+      "author": "Karim Mercier",
+      "genre": "essai",
+      "copies": 4,
+      "loan_duration": 14,
+      "added_at": "2024-02-02T09:00:00.000Z",
+      "archived": true
+    }
+  ],
+  "next": "Mw=="
+}
+
+--- count_books ---
+{
+  "ok": true,
+  "count": 184
+}
+
+--- list_books limit 1 (defaut) ---
+{
+  "ok": true,
+  "items": [
+    {
+      "book_id": "BK-1000",
+      "title": "Le Voyage du fleuve (tome 2)",
+      "author": "Hugo Perrin",
+      "genre": "poésie",
+      "copies": 4,
+      "loan_duration": 14,
+      "added_at": "2023-04-17T09:00:00.000Z",
+      "archived": false
+    }
+  ],
+  "next": "MQ=="
+}
+
+--- list_books limit 1 include_archived ---
+{
+  "ok": true,
+  "items": [
+    {
+      "book_id": "BK-1000",
+      "title": "Le Voyage du fleuve (tome 2)",
+      "author": "Hugo Perrin",
+      "genre": "poésie",
+      "copies": 4,
+      "loan_duration": 14,
+      "added_at": "2023-04-17T09:00:00.000Z",
+      "archived": false
+    }
+  ],
+  "next": "MQ=="
+}
+

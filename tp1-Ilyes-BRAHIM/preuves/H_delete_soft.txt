@@ -1,0 +1,247 @@
+=== fiche MB-202 avant (list_loans include_archived=true) ===
+{
+  "ok": true,
+  "items": [
+    {
+      "loan_id": "LN-5038",
+      "book_id": "BK-1110",
+      "member_id": "MB-202",
+      "started_at": 1785402000,
+      "due_at": 1786611600,
+      "returned_at": 1786611600,
+      "status": "returned",
+      "archived": false,
+      "desk_code": "C3"
+    },
+    {
+      "loan_id": "LN-5039",
+      "book_id": "BK-1159",
+      "member_id": "MB-202",
+      "started_at": 1788771600,
+      "due_at": 1791190800,
+      "returned_at": 1790845200,
+      "status": "returned",
+      "archived": false,
+      "desk_code": "A1"
+    },
+    {
+      "loan_id": "LN-5060",
+      "book_id": "BK-1115",
+      "member_id": "MB-202",
+      "started_at": 1778922000,
+      "due_at": 1781341200,
+      "returned_at": null,
+      "status": "open",
+      "archived": false,
+      "desk_code": "A1"
+    },
+    {
+      "loan_id": "LN-5062",
+      "book_id": "BK-1025",
+      "member_id": "MB-202",
+      "started_at": 1776589200,
+      "due_at": 1779008400,
+      "returned_at": 1778403600,
+      "status": "returned",
+      "archived": false,
+      "desk_code": "C3"
+    },
+    {
+      "loan_id": "LN-5095",
+      "book_id": "BK-1060",
+      "member_id": "MB-202",
+      "started_at": 1776070800,
+      "due_at": 1778490000,
+      "returned_at": 1777885200,
+      "status": "returned",
+      "archived": false,
+      "desk_code": "C3"
+    },
+    {
+      "loan_id": "LN-5120",
+      "book_id": "BK-1040",
+      "member_id": "MB-202",
+      "started_at": 1788858000,
+      "due_at": 1790672400,
+      "returned_at": 1790672400,
+      "status": "returned",
+      "archived": false,
+      "desk_code": "A1"
+    },
+    {
+      "loan_id": "LN-5134",
+      "book_id": "BK-1050",
+      "member_id": "MB-202",
+      "started_at": 1781427600,
+      "due_at": 1783242000,
+      "returned_at": 1782982800,
+      "status": "returned",
+      "archived": false,
+      "desk_code": "C3"
+    }
+  ],
+  "next": "NTA="
+}
+=== delete_loan LN-5038 (retourne) ===
+{
+  "ok": true,
+  "deleted": true,
+  "loan_id": "LN-5038"
+}
+=== list_loans MB-202 SANS include_archived ===
+{
+  "ok": true,
+  "items": [
+    {
+      "loan_id": "LN-5039",
+      "book_id": "BK-1159",
+      "member_id": "MB-202",
+      "started_at": 1788771600,
+      "due_at": 1791190800,
+      "returned_at": 1790845200,
+      "status": "returned",
+      "archived": false,
+      "desk_code": "A1"
+    },
+    {
+      "loan_id": "LN-5060",
+      "book_id": "BK-1115",
+      "member_id": "MB-202",
+      "started_at": 1778922000,
+      "due_at": 1781341200,
+      "returned_at": null,
+      "status": "open",
+      "archived": false,
+      "desk_code": "A1"
+    },
+    {
+      "loan_id": "LN-5062",
+      "book_id": "BK-1025",
+      "member_id": "MB-202",
+      "started_at": 1776589200,
+      "due_at": 1779008400,
+      "returned_at": 1778403600,
+      "status": "returned",
+      "archived": false,
+      "desk_code": "C3"
+    },
+    {
+      "loan_id": "LN-5095",
+      "book_id": "BK-1060",
+      "member_id": "MB-202",
+      "started_at": 1776070800,
+      "due_at": 1778490000,
+      "returned_at": 1777885200,
+      "status": "returned",
+      "archived": false,
+      "desk_code": "C3"
+    },
+    {
+      "loan_id": "LN-5120",
+      "book_id": "BK-1040",
+      "member_id": "MB-202",
+      "started_at": 1788858000,
+      "due_at": 1790672400,
+      "returned_at": 1790672400,
+      "status": "returned",
+      "archived": false,
+      "desk_code": "A1"
+    },
+    {
+      "loan_id": "LN-5134",
+      "book_id": "BK-1050",
+      "member_id": "MB-202",
+      "started_at": 1781427600,
+      "due_at": 1783242000,
+      "returned_at": 1782982800,
+      "status": "returned",
+      "archived": false,
+      "desk_code": "C3"
+    }
+  ],
+  "next": "NTA="
+}
+=== list_loans MB-202 AVEC include_archived=true ===
+{
+  "ok": true,
+  "items": [
+    {
+      "loan_id": "LN-5038",
+      "book_id": "BK-1110",
+      "member_id": "MB-202",
+      "started_at": 1785402000,
+      "due_at": 1786611600,
+      "returned_at": 1786611600,
+      "status": "returned",
+      "archived": true,
+      "desk_code": "C3"
+    },
+    {
+      "loan_id": "LN-5039",
+      "book_id": "BK-1159",
+      "member_id": "MB-202",
+      "started_at": 1788771600,
+      "due_at": 1791190800,
+      "returned_at": 1790845200,
+      "status": "returned",
+      "archived": false,
+      "desk_code": "A1"
+    },
+    {
+      "loan_id": "LN-5060",
+      "book_id": "BK-1115",
+      "member_id": "MB-202",
+      "started_at": 1778922000,
+      "due_at": 1781341200,
+      "returned_at": null,
+      "status": "open",
+      "archived": false,
+      "desk_code": "A1"
+    },
+    {
+      "loan_id": "LN-5062",
+      "book_id": "BK-1025",
+      "member_id": "MB-202",
+      "started_at": 1776589200,
+      "due_at": 1779008400,
+      "returned_at": 1778403600,
+      "status": "returned",
+      "archived": false,
+      "desk_code": "C3"
+    },
+    {
+      "loan_id": "LN-5095",
+      "book_id": "BK-1060",
+      "member_id": "MB-202",
+      "started_at": 1776070800,
+      "due_at": 1778490000,
+      "returned_at": 1777885200,
+      "status": "returned",
+      "archived": false,
+      "desk_code": "C3"
+    },
+    {
+      "loan_id": "LN-5120",
+      "book_id": "BK-1040",
+      "member_id": "MB-202",
+      "started_at": 1788858000,
+      "due_at": 1790672400,
+      "returned_at": 1790672400,
+      "status": "returned",
+      "archived": false,
+      "desk_code": "A1"
+    },
+    {
+      "loan_id": "LN-5134",
+      "book_id": "BK-1050",
+      "member_id": "MB-202",
+      "started_at": 1781427600,
+      "due_at": 1783242000,
+      "returned_at": 1782982800,
+      "status": "returned",
+      "archived": false,
+      "desk_code": "C3"
+    }
+  ],
+  "next": "NTA="
+}

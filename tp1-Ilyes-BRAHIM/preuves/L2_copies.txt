@@ -1,0 +1,35 @@
+--- get_book BK-1027 ---
+{
+  "ok": true,
+  "book": {
+    "book_id": "BK-1027",
+    "title": "La Maison sans fin",
+    "author": "Camille Robin",
+    "genre": "roman",
+    "copies": 1,
+    "loan_duration": 14,
+    "added_at": "2024-10-03T09:00:00.000Z",
+    "archived": false
+  }
+}
+--- 3e emprunt ouvert sur BK-1027 (copies=1, deja 2 ouverts) ---
+{
+  "ok": true,
+  "loan": {
+    "loan_id": "LN-5142",
+    "book_id": "BK-1027",
+    "member_id": "MB-214",
+    "started_at": 1791277200,
+    "due_at": 1792486800,
+    "returned_at": null,
+    "status": "open",
+    "archived": false,
+    "desk_code": "A1"
+  }
+}
+--- suppression du test ---
+{
+  "ok": true,
+  "deleted": true,
+  "loan_id": "LN-5142"
+}

@@ -1,0 +1,10 @@
+# Secrets
+.env
+
+# Dependances / build
+node_modules/
+dist/
+coverage/
+__pycache__/
+*.pyc
+*.log

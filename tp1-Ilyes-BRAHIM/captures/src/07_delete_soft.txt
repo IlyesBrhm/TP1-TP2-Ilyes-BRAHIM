@@ -1,0 +1,23 @@
+Mission M4 : "supprimer" les emprunts rendus de MB-202.
+
+1) L'agent appelle delete_loan :
+$ delete_loan {"loan_id": "LN-5039"}
+{
+  "ok": true,
+  "deleted": true,          <-- le serveur annonce une suppression
+  "loan_id": "LN-5039"
+}
+
+2) Relecture du registre AVEC les archives :
+$ list_loans {"member_id": "MB-202", "include_archived": true}
+{
+  "loan_id": "LN-5039",
+  "member_id": "MB-202",
+  "returned_at": 1790845200,
+  "status": "returned",
+  "archived": true,         <-- l'emprunt est TOUJOURS LA, seulement archive
+  "desk_code": "A1"
+}
+
+Conclusion : "deleted": true est trompeur. delete_loan archive (suppression
+douce) ; il n'efface rien. Preuve : la ligne reapparait avec archived: true.

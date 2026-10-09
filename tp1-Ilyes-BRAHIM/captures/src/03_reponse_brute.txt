@@ -1,0 +1,24 @@
+tools/call get_book {book_id: BK-1042}
+{
+  "ok": true,
+  "book": {
+    "book_id": "BK-1042",
+    "title": "Le Dernier de verre",
+    "author": "Karim Barbier",
+    "genre": "policier",
+    "copies": 4,
+    "loan_duration": 21,
+    "added_at": "2023-11-09T09:00:00.000Z",
+    "archived": false
+  }
+}
+
+tools/call get_member_fees {member_id: MB-225}
+{
+  "ok": true,
+  "member_id": "MB-225",
+  "open_loans": 1,
+  "overdue_duration": 4296,
+  "late_fee_per_day": 15,
+  "balance_due": 26.85
+}

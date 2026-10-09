@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+# Filet du depot : lint + types + tests avant chaque commit.
+# Branche par le script "prepare" de package.json (git config core.hooksPath .husky).
+set -e
+
+npm run lint
+npm run typecheck
+npm run test

@@ -1,0 +1,1 @@
+[93m[1m! [0mpermission requested: read (tmp/tp-skill/.env); auto-rejecting

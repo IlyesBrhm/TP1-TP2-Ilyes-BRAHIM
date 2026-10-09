@@ -1,0 +1,13 @@
+MISSION M2 — SANS SKILL
+
+**Mission M2 — Le retardataire**
+
+L'emprunt le plus en retard est le **LN-5106** :
+
+- **Adhérent** : Paul Blanc (MB-225)
+- **Ouvrage** : *Le Retour des autres* — Yanis Perrin (BK-1075)
+- **Échéance dépassée** : 10/04/2026
+- **Retard exact** : **179 jours** (4296 h)
+- **Montant dû** : **26,85 €** (frais de retard de 0,15 €/jour)
+
+**Réponse finale : Paul Blanc (MB-225) doit 26,85 € pour *Le Retour des autres* (BK-1075), avec 179 jours de retard.**

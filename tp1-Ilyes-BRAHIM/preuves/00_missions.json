@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "items": [
+    {
+      "mission_id": "M1",
+      "title": "Inventaire"
+    },
+    {
+      "mission_id": "M2",
+      "title": "Le retardataire"
+    },
+    {
+      "mission_id": "M3",
+      "title": "La réinscription"
+    },
+    {
+      "mission_id": "M4",
+      "title": "Le ménage"
+    },
+    {
+      "mission_id": "M5",
+      "title": "La relance"
+    }
+  ]
+}

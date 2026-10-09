@@ -1,0 +1,31 @@
+MISSION M2 — AVEC SKILL
+
+> opencode : l'agent appelle l'outil skill
+
+$ skill {"name": "bibliotheque-mcp"}
+
+--- extrait du contenu charge (16506 caracteres) ---
+<skill_content name="bibliotheque-mcp">
+# Skill: bibliotheque-mcp
+
+# Serveur MCP « bibliotheque » — guide anti-pièges
+
+Serveur MCP distant `bibliotheque-municipale` v1.0.0 (protocole MCP 2025-06-18). Aucune documentation externe fiable : le schéma annoncé ne décrit pas tout le comportement réel. Ce guide encode ce qui a été observé sur les réponses brutes, afin de réussir les 5 missions du premier coup.
+
+Outils exposés : `list_books`, `count_books`, `get_book`, `search_books`, `list_members`, `get_member`, `list_loans`, `get_member_fees`, `create_loan`, `delete_loan`, `list_missions`, `get_mission`.
+
+## Faits de base à garder en tête
+
+- **« Maintenant » côté serveur = 2026-10-07 09:00:00 UTC** (epoch `1791277200`). Tous les retards et frais sont calculés par rapport à cet instant, pas par rapport à l'horloge locale de l'agent.
+- `count_books` → **184** (archives comprises). `list_books` 
+
+REPONSE FINALE :
+**Mission M2 — Le retardataire**
+
+- **Emprunt le plus en retard** : `LN-5106` (statut ouvert, non archivé)
+- **Adhérent** : `MB-225` — Paul Blanc (actif)
+- **Ouvrage** : `BK-1075` — *Le Retour des autres* de Yanis Perrin (poésie)
+- **Retard** : échéance `due_at` = 1775811600, « maintenant » serveur = 1791277200 → 15 465 600 s = **179 jours** exactement
+- **Montant dû** : `balance_due` = **26,85 €** (cohérent : 4 296 h / 24 = 179 j × 0,15 €/j)
+
+**Réponse chiffrée : Paul Blanc (MB-225) doit 26,85 € pour 179 jours de retard sur *Le Retour des autres* (BK-1075), emprunt LN-5106.**

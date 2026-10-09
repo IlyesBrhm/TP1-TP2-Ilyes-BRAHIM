@@ -1,0 +1,26 @@
+POST /mcp  ->  tools/list
+
+- list_books
+    Lists the library catalogue. Archived copies (withdrawn from circulation) are excluded unless `include_archived` is true.
+- count_books
+    Returns the size of the catalogue.
+- get_book
+    Returns one book of the catalogue.
+- search_books
+    Full-text search over titles and authors.
+- list_members
+    Lists the library members.
+- get_member
+    Returns one member record.
+- list_loans
+    Lists the loans in registration order (by loan_id).
+- get_member_fees
+    Returns what a member currently owes.
+- create_loan
+    Registers a new loan for a member.
+- delete_loan
+    Deletes a loan from the register.
+- list_missions
+    Lists the missions assigned to the student.
+- get_mission
+    Returns the full brief of one mission.

@@ -1,0 +1,8 @@
+
+┌  MCP Servers
+│
+●  ✓ bibliotheque connected
+│      https://ai-tools-mcp-biblio-production.up.railway.app/mcp
+│
+└  1 server(s)
+

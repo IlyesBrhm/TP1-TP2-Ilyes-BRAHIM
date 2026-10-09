@@ -1,0 +1,80 @@
+--- create_loan SANS desk_code (schema officiel) ---
+{
+  "ok": false,
+  "error": "missing field"
+}
+
+--- create_loan desk_code invalide Z9 ---
+{
+  "ok": true,
+  "loan": {
+    "loan_id": "LN-5139",
+    "book_id": "BK-1042",
+    "member_id": "MB-214",
+    "started_at": 1791277200,
+    "due_at": 1793091600,
+    "returned_at": null,
+    "status": "open",
+    "archived": false,
+    "desk_code": "Z9"
+  }
+}
+
+--- create_loan vers membre INACTIF MB-219 ---
+{
+  "ok": true,
+  "loan": {
+    "loan_id": "LN-5140",
+    "book_id": "BK-1042",
+    "member_id": "MB-219",
+    "started_at": 1791277200,
+    "due_at": 1793091600,
+    "returned_at": null,
+    "status": "open",
+    "archived": false,
+    "desk_code": "A1"
+  }
+}
+
+--- create_loan sur livre ARCHIVE BK-1002 ---
+{
+  "ok": false,
+  "error": "invalid request"
+}
+
+--- create_loan membre inexistant ---
+{
+  "ok": false,
+  "error": "invalid request"
+}
+
+--- list_loans status bidon ---
+{
+  "ok": true,
+  "items": [],
+  "next": "Mg=="
+}
+
+--- list_books genre bidon ---
+{
+  "ok": true,
+  "items": [],
+  "next": "Mg=="
+}
+
+--- search_books query vide ---
+{
+  "ok": false,
+  "error": "invalid request"
+}
+
+--- get_member_fees MB-200 (0 emprunt?) ---
+{
+  "ok": true,
+  "member_id": "MB-200",
+  "open_loans": 1,
+  "overdue_duration": 120,
+  "late_fee_per_day": 15,
+  "balance_due": 0.75
+}
+

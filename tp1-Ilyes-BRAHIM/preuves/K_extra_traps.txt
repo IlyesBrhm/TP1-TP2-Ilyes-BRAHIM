@@ -1,0 +1,95 @@
+--- search_books 'ete' (sans accent) ---
+{
+  "ok": true,
+  "items": [],
+  "next": "Mw=="
+}
+
+--- search_books 'été' (avec accent) ---
+{
+  "ok": true,
+  "items": [
+    {
+      "book_id": "BK-1005",
+      "title": "Un Été perdues",
+      "author": "Sarah Lefèvre",
+      "genre": "policier",
+      "copies": 4,
+      "loan_duration": 28,
+      "added_at": "2026-02-24T09:00:00.000Z",
+      "archived": false
+    },
+    {
+      "book_id": "BK-1006",
+      "title": "Un Été du Nord",
+      "author": "Antoine Marchand",
+      "genre": "policier",
+      "copies": 2,
+      "loan_duration": 28,
+      "added_at": "2026-03-03T09:00:00.000Z",
+      "archived": false
+    },
+    {
+      "book_id": "BK-1011",
+      "title": "Un Été en hiver",
+      "author": "Mehdi Fontaine",
+      "genre": "bd",
+      "copies": 1,
+      "loan_duration": 14,
+      "added_at": "2022-03-06T09:00:00.000Z",
+      "archived": false
+    }
+  ],
+  "next": "Mw=="
+}
+
+--- search_books auteur 'Karim Mercier' ---
+{
+  "ok": true,
+  "items": [
+    {
+      "book_id": "BK-1002",
+      "title": "Les Racines des vivants",
+      "author": "Karim Mercier",
+      "genre": "essai",
+      "copies": 4,
+      "loan_duration": 14,
+      "added_at": "2024-02-02T09:00:00.000Z",
+      "archived": true
+    }
+  ],
+  "next": "Mw=="
+}
+
+--- list_books genre 'poesie' (sans accent) ---
+{
+  "ok": true,
+  "items": [],
+  "next": "Mw=="
+}
+
+--- get_member_fees MB-203 (emprunt ouvert NON en retard) ---
+{
+  "ok": true,
+  "member_id": "MB-203",
+  "open_loans": 2,
+  "overdue_duration": 2376,
+  "late_fee_per_day": 15,
+  "balance_due": 14.85
+}
+
+--- get_book BK-1002 (archive) - get_book le renvoie ---
+{
+  "ok": true,
+  "book": {
+    "book_id": "BK-1002",
+    "title": "Les Racines des vivants",
+    "author": "Karim Mercier",
+    "genre": "essai",
+    "copies": 4,
+    "loan_duration": 14,
+    "added_at": "2024-02-02T09:00:00.000Z",
+    "archived": true
+  }
+}
+

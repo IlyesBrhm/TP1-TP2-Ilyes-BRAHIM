@@ -1,0 +1,24 @@
+livre BK-1011: 0 emprunt(s) ouvert(s)
+livre BK-1027: 2 emprunt(s) ouvert(s)
+livre BK-1113: 1 emprunt(s) ouvert(s)
+--- tentative d'emprunt supplementaire sur BK-1011 (copies=1) ---
+{
+  "ok": true,
+  "loan": {
+    "loan_id": "LN-5141",
+    "book_id": "BK-1011",
+    "member_id": "MB-214",
+    "started_at": 1791277200,
+    "due_at": 1792486800,
+    "returned_at": null,
+    "status": "open",
+    "archived": false,
+    "desk_code": "A1"
+  }
+}
+--- on supprime l'emprunt de test ---
+{
+  "ok": true,
+  "deleted": true,
+  "loan_id": "LN-5141"
+}

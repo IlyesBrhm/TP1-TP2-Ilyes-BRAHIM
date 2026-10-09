@@ -1,0 +1,13 @@
+=== RAFALE: 8 appels count_books sans pause ===
+appel 1: {"ok": true, "count": 184}
+appel 2: {"ok": true, "count": 184}
+appel 3: {"ok": true, "count": 184}
+appel 4: {"ok": true, "count": 184}
+appel 5: {"ok": true, "count": 184}
+appel 6: {"ok": true, "count": 184}
+appel 7: {"ok": true, "count": 184}
+appel 8: {"ok": true, "count": 184}
+=== pause 8s ===
+=== apres pause ===
+appel 1: {"ok": true, "count": 184}
+appel 2: {"ok": true, "count": 184}

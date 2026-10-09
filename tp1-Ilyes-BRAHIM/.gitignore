@@ -1,0 +1,14 @@
+.env
+
+# Dependances installees par OpenCode pour les plugins (ne pas versionner)
+.opencode/node_modules/
+.opencode/package.json
+.opencode/package-lock.json
+.opencode/bun.lock
+
+# Python
+__pycache__/
+*.pyc
+
+# Divers
+*.log
